@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<node>
+<lang>zh_CN</lang>
+<logo_src>template/images/agent_site_logo.png</logo_src>
+<logo_width>299</logo_width>
+<logo_height>92</logo_height>
+<bbs_title>自定义快捷方式</bbs_title>
+<bbs_url>http://</bbs_url>
+<bbs_description>自定义快捷方式简介</bbs_description>
+<host_title>自定义快捷方式</host_title>
+<host_url>http://</host_url>
+<host_description>自定义快捷方式简介</host_description>
+<footer>Enterprise intelligence destinati management system&lt;br /&gt;Copyrigt@2013 yourdomain All Right Reserved</footer>
+</node>
+</root>
