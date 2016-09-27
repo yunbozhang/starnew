@@ -68,16 +68,23 @@ if(!empty($result->title))
 }
 //---------文章和产品description标识 hfh-----------------
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <!-- 页面头部【start】 -->
 <head>
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+
 <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
 <meta http-equiv="Content-Type" content="text/html; charset=<?php _e('charset'); ?>" />
+
 <title><?php $_page_cat='';if(isset($page_cat)) $_page_cat=$page_cat; echo isset($page_title)?$page_title:$_page_cat; if(empty($result->title)){ 	if (!ToolKit::getCorp()) {		if (strrpos($_SITE->site_name,"sitestar")==0) {			echo '--'.$_SITE->site_name;		}	}else{		echo '--'.$_SITE->site_name; 	}}?></title>
+
 <meta name="keywords" content="<?php echo $site_key;?>" />
 <meta name="description" content="<?php echo $site_description;?>" />
+
 <?php  echo empty($meta_str)?'':($meta_str."\n");?>
 <script type="text/javascript" src="script/tree.js"></script>
 <?php 

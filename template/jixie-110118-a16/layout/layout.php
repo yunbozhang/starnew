@@ -5,7 +5,8 @@ include_once('view/common/header.php');
 ?>
 
 <div id="main_div">
-<div id="top">
+<div id="top" hidden>
+<!-- logo隐藏 -->
 <div id="header">
 		<div id="logo"><?php 
 				if (Content::countModules('logo') > 0 || Toolkit::editMode()) {
@@ -20,7 +21,6 @@ include_once('view/common/header.php');
        <!-- 站点语言模块End -->
 	</div>
 </div>
-
     <div id="banner">
 	<?php 
 		if (Content::countModules('banner') > 0 || Toolkit::editMode()) 
@@ -36,7 +36,8 @@ include_once('view/common/header.php');
 <div class="web_bg">
 <div id="mainmain">
 
-  <div id="nav">
+<!-- 导航隐藏 -->
+  <div id="nav"  hidden>
 	<?php if (Content::countModules('nav') > 0 || Toolkit::editMode()) Content::loadModules('nav'); ?>
 	</div>  
 
